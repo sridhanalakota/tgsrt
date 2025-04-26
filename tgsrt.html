@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Application</title>
+</head>
+<body>
+    <form action="./successfully.html" method="get">
+    <center>
+        <h1>Telangana State Road Transport Corporation</h1>
+        <h2>General Bus Pass Application</h2>
+    </center>
+
+    <fieldset>
+        <legend>Applicant Details</legend>
+        <table>
+            <tr>
+                <th><label for="name">Name:</label></th>
+                <td><input type="text" id="name" name="name"></td>
+                <th><label for="guardianName">Father's/Guardian's Name:</label></th>
+                <td><input type="text" id="guardianName" name="guardianName"></td>
+            </tr>
+            <tr>
+                <th><label for="dob">Date of Birth:</label></th>
+                <td><input type="date" id="dob" name="dob"></td>
+                <th><label>Gender:</label></th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="age">Age:</label></th>
+                <td><input type="number" id="age" name="age" min="0" max="120"></td>
+                <th><label for="aadharNo">Aadhar No:</label></th>
+                <td><input type="text" id="aadharNo" name="aadharNo"></td>
+            </tr>
+            <tr>
+                <th><label for="phone">Phone:</label></th>
+                <td><input type="tel" id="phone" name="phone" placeholder="Phone Number"></td>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" id="email" name="email" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <th><label for="upload">Upload photo:</label></th>
+                <td><input type="file" id="upload" name="upload"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Residential Details</legend>
+        <table>
+            <tr>
+                <th><label for="address">Applicant Address:</label></th>
+                <td><textarea id="address" name="address"></textarea></td>
+                <th><label for="district">District*:</label></th>
+                <td><input type="text" id="district" name="district"></td>
+            </tr>
+            <tr>
+                <th><label for="mandal">Mandal:</label></th>
+                <td><input type="text" id="mandal" name="mandal"></td>
+                <th><label for="village">Village:</label></th>
+                <td><input type="text" id="village" name="village"></td>
+            </tr>
+            <tr>
+                <th><label for="pincode">Pincode:</label></th>
+                <td><input type="text" id="pincode" name="pincode"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <table>
+            <tr>
+                <th><label for="city">City:</label></th>
+                <td>
+                    <select id="city" name="city">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Secunderabad">Secunderabad</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                    </select>
+                </td>
+                <th><label for="passType">Pass Type:</label></th>
+                <td>
+                    <select id="passType" name="passType">
+                        <option value="Greater Pass">Greater Pass</option>
+                        <option value="General Metro Express Route Pass">General Metro Express Route Pass</option>
+                        <option value="Ordinary Pass">Ordinary Pass</option>
+                        <option value="Metro Deluxe Pass">Metro Deluxe Pass</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        <table>
+            <tr>
+                <th><label for="paymentMode">Payment mode:</label></th>
+                <td>
+                    <select id="paymentMode" name="paymentMode">
+                        <option value="Select Payment Mode">Select Payment Mode</option>
+                        <option value="Payment at Counter">Payment at Counter</option>
+                    </select>
+                </td>
+                <th><label for="passCollectionCenter">Center to collect pass:</label></th>
+                <td>
+                    <select id="passCollectionCenter" name="passCollectionCenter">
+                        <option value="Select Pass Delivery Mode">Select Pass Delivery Mode</option>
+                        <option value="At Counter">At Counter</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <center>
+        <h2><i>Captcha: MTtd2D</i></h2>
+        <input type="text" placeholder="Enter Captcha"><br><br>
+        <input type="submit" value="Submit">
+    </center>
+
+    </form>
+</body>
+</html>
